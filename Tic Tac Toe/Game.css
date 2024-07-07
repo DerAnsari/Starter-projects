@@ -1,0 +1,159 @@
+*{
+    margin: 0.5%;
+}
+
+body{
+    background-color: #095256;
+    text-align: center;
+}
+#Heading{
+    font-size: 100px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #BB9F06;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.Game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vmin;
+
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 20%;
+    border: none;
+    font-size: 80px;
+    color: #BB9F06;
+    background-color: #5AAA95;
+
+}
+.PlayerInfo{
+    height: 65vmin;
+    width: 50vmin;
+    background-color: #087F8C;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fa-circle{
+    font-size: 250px;
+    color: #86A873;
+}
+.fa-x{
+    font-size: 250px;
+    color: #86A873;
+}
+.Identification{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BB9F06;
+    font-size: 30px;
+}
+h2{
+    color: #BB9F06;
+    font-size: 25px;
+}
+.reset{
+    width: 150px;
+    height: 50px;
+    background-color: #5AAA95;
+    border-radius: 40px;
+    border: none;
+}
+#turnIndicator1{
+    color: wheat;
+    background-color: maroon;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+#turnIndicator2{
+    color: wheat;
+    background-color: maroon;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: wheat;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    height: 50%;
+    border-radius: 10px;
+    color:#5AAA95 ;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.close {
+    color: red;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#msg{
+    flex-grow: 1;
+
+}
+.newOne{
+    width: 150px;
+    height: 50px;
+    background-color: #5AAA95;
+    border-radius: 40px;
+    border: none;
+    position: absolute;
+    bottom: 50px;
+    right: 40%;
+}
