@@ -25,6 +25,8 @@ const showWinner = (userWin, userChoice, choiceComp)=>{
 }
 const resetgame= ()=>{
     console.log("test 1")
+    userScore=0;
+    compScore=0;
     compScorePara.innerText= 0;
     userScorePara.innerText= 0;
     msgPara.innerText = "Begin The Game"
