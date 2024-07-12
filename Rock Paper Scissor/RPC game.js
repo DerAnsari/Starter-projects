@@ -28,6 +28,7 @@ const resetgame= ()=>{
     compScorePara.innerText= 0;
     userScorePara.innerText= 0;
     msgPara.innerText = "Begin The Game"
+    msgPara.style.backgroundColor= "#403D58"
 
 }
 const compChoice= ()=>{
