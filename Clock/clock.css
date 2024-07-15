@@ -1,0 +1,80 @@
+ *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+h1{
+    position: absolute;
+    margin-bottom:570px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    color: #1F2041;
+    font-weight: bold;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #B8D4E3;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 80px;
+    color: black;
+}
+
+.sec-box,.min-box,.hour-box{
+    background-color: #FFC9B5;
+    color: #EEFFDB;
+    font-size: 70px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hour-box{
+    background-color: #66101F;
+}
+.min-box{
+    background-color: #855A5C;
+}
+.text{
+    font-size: 20px;
+}
+#hour::before,
+#mins::before,
+.sec-box::before {
+    content: '';
+    position: absolute;
+    inset: -0px;
+    border-radius: 50%;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+}
+#hour,#mins,#sec,#AM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 75px;
+}
+#AM{
+    position: absolute;
+    margin-top: 85px;
+    font-size: 40px;
+}
