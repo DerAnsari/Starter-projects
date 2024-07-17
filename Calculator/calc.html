@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="calc-box">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="apendToDisplay('+')" class="operation">+</button>
+            <button onclick="apendToDisplay('7')">7</button>
+            <button onclick="apendToDisplay('8')">8</button>
+            <button onclick="apendToDisplay('9')">9</button>
+            <button onclick="apendToDisplay('-')" class="operation">-</button>
+            <button onclick="apendToDisplay('4')">4</button>
+            <button onclick="apendToDisplay('5')">5</button>
+            <button onclick="apendToDisplay('6')">6</button>
+            <button onclick="apendToDisplay('*')" class="operation">*</button>
+            <button onclick="apendToDisplay('1')">1</button>
+            <button onclick="apendToDisplay('2')">2</button>
+            <button onclick="apendToDisplay('3')">3</button>
+            <button onclick="apendToDisplay('/')" class="operation">/</button>
+            <button onclick="apendToDisplay('0')">0</button>
+            <button onclick="apendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operation">AC</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
